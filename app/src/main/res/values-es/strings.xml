@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculadora de Jake</string>
+    <string name="calc_clear">DSR</string>
+    <string name="calc_calculate">Calcular</string>
+</resources>

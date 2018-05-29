@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:id="@+id/vertRow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/calculation"
+            android:text="@string/defaultText"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="@color/calculation"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/calculate"
+            android:text="@string/calculate"
+            android:textSize="20sp"
+            android:onClick="equals"
+            android:background="@color/landCalculate"
+            android:gravity="center"
+            android:padding="30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/vertRow">
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/one"
+                android:text="@string/one"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/two"
+                android:text="@string/two"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/three"
+                android:text="@string/three"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/clear"
+                android:text="@string/clear"
+                android:textSize="18sp"
+                android:onClick="clear"
+                android:background="@color/funcButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/four"
+                android:text="@string/four"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/five"
+                android:text="@string/five"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/six"
+                android:text="@string/six"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/plus"
+                android:text="@string/plus"
+                android:textSize="18sp"
+                android:onClick="setCalcMode"
+                android:background="@color/funcButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seven"
+                android:text="@string/seven"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/eight"
+                android:text="@string/eight"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/nine"
+                android:text="@string/nine"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/minus"
+                android:text="@string/minus"
+                android:textSize="18sp"
+                android:onClick="setCalcMode"
+                android:background="@color/funcButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dot"
+                android:text="@string/dot"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/zero"
+                android:text="@string/zero"
+                android:textSize="18sp"
+                android:onClick="buildNumber"
+                android:background="@color/numButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/multiply"
+                android:text="@string/multiply"
+                android:textSize="18sp"
+                android:onClick="setCalcMode"
+                android:background="@color/funcButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/divide"
+                android:text="@string/divide"
+                android:textSize="18sp"
+                android:onClick="setCalcMode"
+                android:background="@color/funcButton"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

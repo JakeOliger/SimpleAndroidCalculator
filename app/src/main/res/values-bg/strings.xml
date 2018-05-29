@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">калкулаторът на Джейк</string>
+    <string name="calc_clear">изтрий</string>
+    <string name="calc_calculate">изчисли</string>
+</resources>

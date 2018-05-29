@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="calculation">#F8F8F8</color>
+    <color name="numButton">#9bc6ff</color>
+    <color name="funcButton">#86ade0</color>
+    <color name="landCalculate">#EAEAEA</color>
+</resources>
